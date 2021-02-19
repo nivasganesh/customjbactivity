@@ -18,7 +18,10 @@
            "inArguments":[
 				{
                     "emailAddress": "{{Contact.Attribute.SEC_CONTACT.CONTACT_EMAIL}}"
-                }									
+                }
+		   {
+		   "phoneNumber":"{{Contact.Attribute.SEC_CONTACT.CONTACT_PHONE_NUMBER}}"
+		   }
 			],
           "outArguments": [],
           "url": "https://newcustomactivity.herokuapp.com/journeybuilder/execute",
@@ -26,7 +29,7 @@
             "body": "",
             "header": "",
             "format": "json",
-            "useJwt": false,
+            "useJwt": true,
             "timeout": 10000
         }
     },
@@ -35,22 +38,22 @@
       "save": {
         "url": "https://newcustomactivity.herokuapp.com/journeybuilder/save",
           "verb": "POST",
-        "useJwt": false
+        "useJwt": true
        },
        "publish": {
         "url": "https://newcustomactivity.herokuapp.com/journeybuilder/publish",
            "verb": "POST",
-        "useJwt": false
+        "useJwt": true
        },
       "stop": {
         "url": "https://newcustomactivity.herokuapp.com/journeybuilder/stop",
            "verb": "POST",
-        "useJwt": false
+        "useJwt": true
       },
       "validate": {
         "url": "https://newcustomactivity.herokuapp.com/journeybuilder/validate",
         "verb": "POST",
-        "useJwt": false
+        "useJwt": true
       }
     },
     "wizardSteps": [
