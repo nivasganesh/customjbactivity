@@ -87,12 +87,12 @@ define([
     }
 
     function onGetTokens (tokens) {
-        // Response: tokens = { token: <legacy token>, fuel2token: <fuel api token> }
+        Response: tokens = { token: <legacy token>, fuel2token: <fuel api token> }
         // console.log(tokens);
     }
 
     function onGetEndpoints (endpoints) {
-        // Response: endpoints = { restHost: <url> } i.e. "rest.s1.qa1.exacttarget.com"
+        Response: endpoints = { restHost: <url> } //i.e. "rest.s1.qa1.exacttarget.com"
         // console.log(endpoints);
     }
 
